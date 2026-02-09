@@ -26,11 +26,99 @@
             border-radius: 15px;
             margin-top: 10px;
         }
+        .timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #d6336c;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.event {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.event::after {
+    content: '❤️';
+    position: absolute;
+    top: 25px;
+    right: -15px;
+    font-size: 20px;
+}
+
+.left {
+    left: 0;
+    text-align: right;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -15px;
+}
+
+.event-content {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
 
     <h1>❤️ Bizim Hikayemiz ❤️</h1>
+
+    <h2>🕰️ Zaman Tünelimiz</h2>
+
+<div class="timeline">
+
+    <div class="event left">
+        <div class="event-content">
+            <h3>İlk Tanıştığımız Gün</h3>
+            <p>Her şey burada başladı. O gün bunu bilmiyorduk ama kader iş başındaydı.</p>
+            <small>📅 12.03.2023</small>
+        </div>
+    </div>
+
+    <div class="event right">
+        <div class="event-content">
+            <h3>İlk Buluşma</h3>
+            <p>Heyecan, gülüşler ve zamanın nasıl geçtiğini anlamadığımız o gün.</p>
+            <small>📅 20.03.2023</small>
+        </div>
+    </div>
+
+    <div class="event left">
+        <div class="event-content">
+            <h3>İlk Tartışma</h3>
+            <p>Zorlandık ama vazgeçmedik. Asıl bağ burada güçlendi.</p>
+            <small>📅 05.06.2023</small>
+        </div>
+    </div>
+
+    <div class="event right">
+        <div class="event-content">
+            <h3>Bugün</h3>
+            <p>Hâlâ buradayız. Daha yazılacak çok anımız var ❤️</p>
+            <small>📅 Bugün</small>
+        </div>
+    </div>
+
+</div>
 
     <div class="box">
         <h2>İlk Tanıştığımız Gün</h2>
