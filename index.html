@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("Q5OSFj9-khKQb6O_n");
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dijital Günlüğüm</title>
@@ -154,6 +161,12 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 </script>
-
+<script>
+function sendMailNotification() {
+    emailjs.send("service_hle0lzr", "template_xx8b13p", {
+        time: new Date().toLocaleString()
+    });
+}
+</script>
 </body>
 </html>
