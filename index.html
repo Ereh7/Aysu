@@ -165,8 +165,18 @@ function closeModal() {
 function sendMailNotification() {
     emailjs.send("service_hle0lzr", "template_xx8b13p", {
         time: new Date().toLocaleString()
+    })
+    .then(function(response) {
+        console.log("Mail gönderildi", response);
+    }, function(error) {
+        console.log("Mail hatası", error);
     });
 }
+
+/* SAYFA AÇILDIĞINDA OTOMATİK ÇALIŞSIN */
+window.onload = function() {
+    sendMailNotification();
+};
 </script>
 </body>
 </html>
