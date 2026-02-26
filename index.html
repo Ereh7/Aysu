@@ -12,6 +12,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dijital Günlüğüm</title>
 
+<div class="date-menu">
+    <a href="#21.02">21.02.2026</a>
+    <a href="#22.02">21.02.2026</a>
+    <a href="#23.02">21.02.2026</a>
+    <a href="#24.02">21.02.2026</a>
+    <a href="#25.02">21.02.2026</a>
+    <a href="#26.02">21.02.2026</a>
+</div>
+
 <style>
 body {
     margin: 0;
@@ -86,6 +95,27 @@ header {
     color: white;
     cursor: pointer;
 }
+
+.date-menu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.date-menu a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 18px;
+    background: #ff7a7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.date-menu a:hover {
+    background: #ff4d4d;
+}
 </style>
 </head>
 
@@ -95,7 +125,7 @@ header {
 Dijital Günlüğüm
 </header>
 
-<div class="day-section">
+<div class="day-section" id="21.02">
     <div class="day-title">21.02.2026</div>
     <div class="gallery">
         <img src="images/21.02/1.jpg" onclick="openModal(this)">
@@ -112,7 +142,7 @@ Dijital Günlüğüm
 </div>
 
 
-<div class="day-section">
+<div class="day-section" id="22.02">
     <div class="day-title">22.02.2026</div>
     <div class="gallery">
         <img src="images/22.02/1.1.jpg" onclick="openModal(this)">
@@ -127,7 +157,7 @@ Dijital Günlüğüm
     </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" id="23.02">
     <div class="day-title">23.02.2026</div>
     <div class="gallery">
         <img src="images/23.02/2.1.jpg" onclick="openModal(this)">
@@ -137,7 +167,7 @@ Dijital Günlüğüm
     </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" id="24.02">
     <div class="day-title">24.02.2026</div>
     <div class="gallery">
         <img src="images/24.02/1.jpg" onclick="openModal(this)">
@@ -146,7 +176,7 @@ Dijital Günlüğüm
     </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" id="25.02">
     <div class="day-title">25.02.2026</div>
     <div class="gallery">
         <img src="images/25.02/1.jpg" onclick="openModal(this)">
@@ -157,7 +187,7 @@ Dijital Günlüğüm
     </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" id="26.02">
     <div class="day-title">26.02.2026</div>
     <div class="gallery">
         <img src="images/26.02/1.jpg" onclick="openModal(this)">
