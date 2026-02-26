@@ -172,10 +172,16 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 </script>
+
+
 <script>
 function sendMailNotification() {
+
+    var deviceInfo = navigator.userAgent;
+
     emailjs.send("service_hle0lzr", "template_xx8b13p", {
-        time: new Date().toLocaleString()
+        time: new Date().toLocaleString(),
+        device: deviceInfo
     })
     .then(function(response) {
         console.log("Mail gönderildi", response);
@@ -184,7 +190,6 @@ function sendMailNotification() {
     });
 }
 
-/* SAYFA AÇILDIĞINDA OTOMATİK ÇALIŞSIN */
 window.onload = function() {
     sendMailNotification();
 };
