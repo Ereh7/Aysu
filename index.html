@@ -107,6 +107,28 @@ header {
 .date-menu a:hover {
     background: #ff4d4d;
 }
+
+#topBtn {
+    display: none; /* Başta gizli */
+    position: fixed; /* Sabit pozisyon */
+    bottom: 30px; /* Alt mesafe */
+    right: 30px;  /* Sağ mesafe */
+    z-index: 100; 
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #ff7a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background-color: #ff4d4d;
+}
+
 </style>
 </head>
 
@@ -231,5 +253,30 @@ window.onload = function() {
     sendMailNotification();
 };
 </script>
+    
+<script>
+#topBtn {
+    display: none; /* Başta gizli */
+    position: fixed; /* Sabit pozisyon */
+    bottom: 30px; /* Alt mesafe */
+    right: 30px;  /* Sağ mesafe */
+    z-index: 100; 
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #ff7a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background-color: #ff4d4d;
+}
+</script>
+
+<button id="topBtn" onclick="topFunction()">Yukarı Çık</button>
 </body>
 </html>
